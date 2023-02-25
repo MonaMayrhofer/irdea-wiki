@@ -1,26 +1,27 @@
-baseURL: https://example.com/
+baseURL: https://nionidh.gitlab.io/irdea/
 languageCode: en-us
-title: Author Name
+title: Irdea Wiki
 theme: "PaperMod"
+Copyright: "&copy; Mona Mayrhofer, Linz 2023"
 
 params:
     homeInfoParams:
-        Title: Hello World 👋
+        Title: Irdea Wiki
         Content: This is a sample hugo template
 
-    socialIcons: # optional
-        - name: "github"
-          url: "https://github.com/sawhney17"
-        - name: "youtube"
-          url: "https://www.youtube.com/channel/UCjMJeOCEAG2XFtd9JvZwomw"
-        - name: "twitter"
-          url: "https://twitter.com/aryansawhney17"
-        - name: "kofi" 
-          url: "https://buymeacoffee.com/sawhney17"
-        - name: "rss"
-          url: "https://aryansawhney.com/index.xml"
-    ShowReadingTime: true
-    author: "One Nice Person"
+    # socialIcons: # optional
+    #     - name: "github"
+    #       url: "https://github.com/sawhney17"
+    #     - name: "youtube"
+    #       url: "https://www.youtube.com/channel/UCjMJeOCEAG2XFtd9JvZwomw"
+    #     - name: "twitter"
+    #       url: "https://twitter.com/aryansawhney17"
+    #     - name: "kofi" 
+    #       url: "https://buymeacoffee.com/sawhney17"
+    #     - name: "rss"
+    #       url: "https://aryansawhney.com/index.xml"
+    ShowReadingTime: false
+    author: "Mona Mayrhofer"
 
 outputs:
     home:
