@@ -7,7 +7,7 @@ Copyright: "&copy; Mona Mayrhofer, Linz 2023"
 params:
     homeInfoParams:
         Title: Irdea Wiki
-        Content: This is a sample hugo template
+        Content: The public interface for the Irdea Wiki is still very much a WIP.
 
     # socialIcons: # optional
     #     - name: "github"
@@ -31,19 +31,19 @@ outputs:
 
 menu:
     main:
-        - identifier: categories
-          name: Categories
-          url: /categories/
-          weight: 10
+        # - identifier: categories
+        #   name: Categories
+        #   url: /categories/
+        #   weight: 10
         - identifier: tags
           name: Tags
           url: /tags/
           weight: 20
-        - identifier: search
-          name: Search
-          url: /search/
-          weight: 20
-        - identifier: archive
-          name: Archive
-          url: /archives/
-          weight: 20
+        # - identifier: search
+        #   name: Search
+        #   url: /search/
+        #   weight: 20
+        # - identifier: archive
+        #   name: Archive
+        #   url: /archives/
+        #   weight: 20
