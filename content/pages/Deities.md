@@ -9,6 +9,8 @@ lastMod: 2023-02-25
 {{query (page-tags deity)}}
 query-properties:: [:page]
 
+
+
 # Phrases
 
   + Hadur's Hammer be with you
@@ -19,15 +21,30 @@ query-properties:: [:page]
 
 # Pathfinder <=> Irdea Gods
 
-  + |Irori|Kalsai|
-|Sarenrae|Atha|
-|Brigh|Dreifh|
-|Groetus|Gournurat|
-|Torag|Hadur|
-|Milani|Laira|
-|Pharasma|Morrigha|
+  + |Abadar||
 |Alseta|Sorrelja|
+|Asmodeus||
+|Brigh|Dreifh|
+|Calistria||
+|Cayden Cailean |Ayden Alemoth|
 |Desna|Saerna|
+|Erastril||
+|Gorum||
+|Gozreh|Ishran|
+|Groetus|Gournurat|
+|Iomedae||
+|Irori|Kalsai|
+|Lamashtu||
+|Milani|Laira|
+|Nethys||
+|Norgorber||
+|Pharasma|Morrigha|
+|Rovagug||
+|Sarenrae|Atha|
+|Shelyn||
 |Sivanah|Niona|
+|Torag|Hadur|
+|Urgathoa||
+|Zon-Kuthon||
 
   + 
