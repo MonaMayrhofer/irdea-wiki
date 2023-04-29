@@ -38,3 +38,24 @@
 .dark.list {
     background: var(--theme);
 }
+
+@media print {
+    :root {
+        --main-width: 100%;
+    }
+
+    .top-link {
+        display: none !important;
+    }
+
+    #menu {
+        display: none !important;
+    }
+
+    .logo-switches {
+        display: none !important;
+    }
+    .post-footer {
+        margin-top: 0 !important;
+    }
+}
