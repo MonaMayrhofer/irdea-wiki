@@ -3,11 +3,47 @@ tags:
 - General Knowledge
 title: Deities
 categories:
-date: 2023-02-16
-lastMod: 2023-02-25
+date: 2023-03-29
+lastMod: 2023-04-01
 ---
 {{query (page-tags deity)}}
-query-properties:: [:page]
+query-properties:: [:page :pathfinder]
+query-sort-by:: pathfinder
+query-sort-desc:: true
+
+query-table:: false
+{{< logseq/orgQUERY >}}{:title "All pages have a *programming* tag"
+ :query [:find (pull ?p [*])
+       :in $ ?tag
+       :where
+       [?t :block/name ?tag]
+       [?p :block/tags ?t]
+       [?p :block/name ?name]]
+ :inputs ["deity"]
+:result-transform (fn [result] (reverse (sort-by (fn [it] (get-in it [:block/properties :pathfinder])) result)))
+ :view (fn [result]
+[:div.table-wrapper
+       [:table.table-auto
+[:thead
+  [:tr
+    [:th "Name"]
+    [:th "Pathfinder"]
+    [:th "God Of"]
+  ]
+]
+[:tbody
+        (for [page result]
+[:tr 
+[:td (let [name (get-in page [:block/name])] [:a {:href (str "#/page/" name)} (clojure.string/capitalize name)])]
+[:td (get-in page [:block/properties :pathfinder])]
+[:td (get-in page [:block/properties :god-of])]
+]
+)]]]
+)
+}
+{{< / logseq/orgQUERY >}}
+
+
 
 
 
@@ -21,29 +57,30 @@ query-properties:: [:page]
 
 # Pathfinder <=> Irdea Gods
 
-  + |Abadar||
-|Alseta|Sorrelja|
-|Asmodeus||
-|Brigh|Dreifh|
-|Calistria||
-|Cayden Cailean |Ayden Alemoth|
-|Desna|Saerna|
-|Erastril||
-|Gorum||
-|Gozreh|Ishran|
-|Groetus|Gournurat|
+  + |Lost Omens|Irdea|
+|Abadar||
+|Alseta|[[Sorrelja]]|
+|Asmodeus| [[Asmodeus]] |
+|Brigh|[[Dreifh]]|
+|Calistria|[[Solistre]]|
+|Cayden Cailean |[[Ayden Alemoth]]|
+|Desna|[[Saerna]]|
+|Erastril|[[]]|
+|Gorum|[[Farbod]]|
+|Gozreh|[[Ishran]]|
+|Groetus|[[Gournurat]]|
 |Iomedae||
-|Irori|Kalsai|
+|Irori|[[Kalsai]]|
 |Lamashtu||
-|Milani|Laira|
+|Milani|[[Laira]]|
 |Nethys||
 |Norgorber||
-|Pharasma|Morrigha|
+|Pharasma|[[Atha]]|
 |Rovagug||
-|Sarenrae|Atha|
+|Sarenrae|[[Morrigha]]|
 |Shelyn||
-|Sivanah|Niona|
-|Torag|Hadur|
+|Sivanah|[[Niona]]|
+|Torag|[[Haldur]]|
 |Urgathoa||
 |Zon-Kuthon||
 
